@@ -1,0 +1,190 @@
+body {
+    background-image: url("logo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-image: 
+        linear-gradient(rgba(0, 68, 239, 0.6), rgba(255, 255, 255, 0.6)),
+        url("logo2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: rgb(11, 68, 5);
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #00287e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 30px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+}
+
+.logo {
+    animation: rotateLogo 2s ease;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(-180deg) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+header h1 {
+    animation: slideIn 1.5s ease forwards;
+}
+
+header p {
+    animation: slideIn 2s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: pageFade 1s ease-in-out;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav a {
+    transition: transform 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+    transform: scale(1.1);
+}
+
+.gallery img:hover,
+.video-gallery video:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+section {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+body {
+    animation: pageFade 1s ease-in-out;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.sosmed {
+    margin-top: 10px;
+}
+
+.sosmed a {
+    color: white;
+    font-size: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.sosmed a:hover {
+    color: rgb(0, 85, 255);
+    transform: scale(1.2);
+}
